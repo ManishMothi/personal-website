@@ -57,7 +57,7 @@ h1 {
 }
 
 .project-card {
-  aspect-ratio: 1;
+  min-height: 200px; /* Adjust as needed */
   border-radius: 12px;
   padding: 1rem;
   position: relative;
