@@ -6,7 +6,14 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #0a0a0c;
+  background-image: linear-gradient(
+    to right,
+    rgba(60, 0, 120, 0.25),
+    rgba(80, 30, 100, 0.15),
+    rgba(20, 60, 180, 0.25)
+  );
+
   color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   line-height: 1.5;
@@ -85,27 +92,67 @@ h1 {
 
 /* Project-specific gradients */
 .ninja {
-  background: linear-gradient(135deg, #6b46c1, #2c5282);
+  background: linear-gradient(135deg, #6b46c1, #2c5282, #3b82f6);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
 }
 
-.intern {
-  background: linear-gradient(135deg, #4a5568, #2d3748);
+.card1 {
+  background: linear-gradient(135deg, #8b5cf6, #c084fc, #a78bfa);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
 }
 
-.catalyst {
-  background: linear-gradient(135deg, #c53030, #822727);
+.card2 {
+  background: linear-gradient(135deg, #ef4444, #f87171, #fca5a5);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
 }
 
-.friday {
-  background: linear-gradient(135deg, #b83280, #702459);
+.card3 {
+  background: linear-gradient(135deg, #ec4899, #f472b6, #f9a8d4);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
 }
 
-.passable {
-  background: linear-gradient(135deg, #2c7a7b, #234e52);
+.card4 {
+  background: linear-gradient(135deg, #10b981, #34d399, #6ee7b7);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
 }
 
-.cardinals {
-  background: linear-gradient(135deg, #d69e2e, #744210);
+.card5 {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24, #fcd34d);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+  text-decoration: none;
 }
 
 .link {
